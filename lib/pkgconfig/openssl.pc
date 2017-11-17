@@ -1,12 +1,9 @@
-prefix=/usr
+prefix=/data/dp
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
 Name: OpenSSL
 Description: Secure Sockets Layer and cryptography libraries and tools
-Version: 1.0.1j
-Requires: 
-Libs: -L${libdir} -lssl -lcrypto
-Libs.private: -L/home/jenkins/workspace/r3p_daily_publish/staging_dir/target-mipsel-xiaomi-linux-uclibc/usr/lib -L/home/jenkins/workspace/r3p_daily_publish/staging_dir/target-mipsel-xiaomi-linux-uclibc/lib -L/home/jenkins/workspace/r3p_daily_publish/external_toolchain/mipsel-xiaomi-linux3.10-uclibc-linaro/usr/lib -L/home/jenkins/workspace/r3p_daily_publish/external_toolchain/mipsel-xiaomi-linux3.10-uclibc-linaro/lib -ldl -ldl
-Cflags: -I${includedir} 
+Version: 1.0.2m
+Requires: libssl libcrypto
